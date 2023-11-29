@@ -1,0 +1,75 @@
+.app {
+  color: slategrey;
+
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+
+  flex-direction: column;
+  align-items: center;
+
+  background-color: steelblue;
+  font-size: 1.5rem;
+}
+
+.app-header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  background-color: silver;
+
+  width: 100%;
+  max-width: 900px;
+
+  border-bottom: lightgrey 1px solid;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-content {
+    width: 100%;
+    max-width: 900px;
+    flex-grow: 1;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column; 
+
+    background-color: lavender;
+    background-size: 40px 40px;
+    background-image:
+        linear-gradient(to right, lightgrey 1px, transparent 1px),
+        linear-gradient(to bottom, lightgrey 1px, transparent 1px);
+}
+
+div.board{
+  display: flex;
+  flex-wrap: wrap;
+}
+div.board > svg {
+  flex: 1 0 33%;
+  margin: 1px;
+}
+
+svg.empty {
+  height: 100px;
+  background-color: rgba(200, 200, 200, 0.2);
+}
+
+svg.active:hover{
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+svg.cross {
+  stroke: #bbb;
+  stroke-width: 5;
+}
+
+svg.nought {
+  stroke: #42b94c;
+  stroke-width: 5;
+  fill: none;
+}
